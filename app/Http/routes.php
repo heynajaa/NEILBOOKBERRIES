@@ -11,41 +11,30 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
-
-//trial
-//Route::get('/', 'WelcomeController@index');
-//Route::get('contact', 'WelcomeController@contact');
-//Route::get('about', 'PagesController@about');
-Route::get('about', 'TrialController@about');
-
 
 //route to Admin Login page
-Route::get('loginAdmin', 'PagesController@loginAdmin');
+Route::get('loginAdmin', 'LoginController@loginAdmin');
 
 //route to Guest Login page
-Route::get('loginGuest', 'PagesController@loginGuest');
+Route::get('loginGuest', 'LoginController@loginGuest');
 
 //route to Librarian Login page
-Route::get('loginLibrarian', 'PagesController@loginLibrarian');
+Route::get('loginLibrarian', 'LoginController@loginLibrarian');
 
 //route to Student Login page
-Route::get('loginStudent', 'PagesController@loginStudent');
+Route::get('loginStudent', 'LoginController@loginStudent');
 
 //route to Teacher Login page
-Route::get('loginTeacher', 'PagesController@loginTeacher');
+Route::get('loginTeacher', 'LoginController@loginTeacher');
 
 //route to Latest Books page
-Route::get('latestBooks', 'PagesController@latestBooks');
+Route::get('latestBooks', 'AdminController@latestBooks');
 
 //route to Librarian Record Book page
-Route::get('recordBooks', 'PagesController@recordBooks');
+Route::get('recordBooks', 'Librarian@recordBooks');
 
 //route to Guest View Record page
-Route::get('guestViewRecord', 'PagesController@guestViewRecord');
+Route::get('guestViewRecord', 'GuestController@guestViewRecord');
 
 //route to Student Record Nilam page
-Route::get('studentRecordNilam', 'PagesController@stdRecordNilam');
+Route::get('studentRecordNilam', 'StudentController@stdRecordNilam');
