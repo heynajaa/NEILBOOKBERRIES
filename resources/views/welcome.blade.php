@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>NEILBOOKBERRIES</title>
 
         <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -31,14 +31,23 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 50px;
             }
+
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">WELCOME TO NEILBOOKBERRIES</div>
+                <hr/>
+                <div class="usermenu">
+                    {!! Form::button('Hit Me') !!}
+                    <button>Admin</button>
+                    <button>Student</button>
+                    <button>Teacher</button>
+                    <button>Librarian</button>
+                </div>
             </div>
         </div>
     </body>

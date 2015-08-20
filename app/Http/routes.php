@@ -11,8 +11,14 @@
 |
 */
 
+//
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/loginstudent', 'LoginController@loginStudent');
+Route::get('/', 'PagesController@index');
 
-//route to Admin Login page
+
+/*//route to Admin Login page
 Route::get('loginAdmin', 'LoginController@loginAdmin');
 
 //route to Guest Login page
@@ -38,3 +44,4 @@ Route::get('guestViewRecord', 'GuestController@guestViewRecord');
 
 //route to Student Record Nilam page
 Route::get('studentRecordNilam', 'StudentController@stdRecordNilam');
+*/

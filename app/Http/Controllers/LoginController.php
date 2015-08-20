@@ -11,31 +11,30 @@ class LoginController extends Controller
 {
     public function loginAdmin() {
   	
-    	return view('login_gui.admin');
-
+    	return view('auth.admin');
     }
 
     public function loginLibrarian() {    
 
-        return view('login_gui.librarian');
+        return view('auth.librarian');
        
     }
 
     public function loginStudent() {    
 
-        return view('login_gui.student');
+        return view('auth.student');
        
     }
 
     public function loginTeacher() {    
 
-        return view('login_gui.teacher');
+        return view('auth.teacher');
        
     }
 
     public function loginGuest() {    
 
-        return view('login_gui.guest');
+        return view('auth.guest');
        
     }
 
