@@ -9,14 +9,29 @@ use App\Http\Controllers\Controller;
 
 class NilamController extends Controller
 {
-    /*public function about() {
+	public function rnilam()
+	{
+		return view('student.recordNilam');
+	}
 
-    	$name='Najihah';
+	public function nilamlist()
+	{
+		return view('student.nilamList');
+	}
 
-    	return view('try.about')->with('name',$name);
+	public function nclass()
+	{
+		return view('teacher.nilamClass');
+	}
 
-    	/*<h1>About Me : <?= $name ?></h1>
-    }*/
+	public function nstudent()
+	{
+		return view('teacher.nilamStudent');
+	}	
 
+	public function comment()
+	{
+		return view('teacher.commentNilam');
+	}
 
 }

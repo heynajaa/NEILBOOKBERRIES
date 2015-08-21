@@ -9,14 +9,13 @@ use App\Http\Controllers\Controller;
 
 class GuestController extends Controller
 {
-    /*public function about() {
+	public function home()
+	{
+		return view('guest.homeGuest');
+	}
 
-    	$name='Najihah';
-
-    	return view('try.about')->with('name',$name);
-
-    	/*<h1>About Me : <?= $name ?></h1>
-    }*/
-
-
+	public function nstudentguest()
+	{
+		return view('guest.nilamStudentGuest');
+	}
 }

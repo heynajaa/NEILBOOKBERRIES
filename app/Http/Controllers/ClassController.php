@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers;
+use App\Student; 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -9,14 +10,17 @@ use App\Http\Controllers\Controller;
 
 class ClassController extends Controller
 {
-    /*public function about() {
+	public function mclass()
+    {
+    	return view('admin.manageClass');
+    }
 
-        $name='Najihah';
+    public function mstudent()
+    {
+    	$students = Student::all();
 
-        return view('try.about')->with('name',$name);
-
-        /*<h1>About Me : <?= $name ?></h1>
-    }*/
-
+  		return view('admin.manageStudent' , compact('students'));
+    }
+   
 
 }

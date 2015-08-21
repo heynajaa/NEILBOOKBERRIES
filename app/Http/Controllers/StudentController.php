@@ -9,14 +9,21 @@ use App\Http\Controllers\Controller;
 
 class StudentController extends Controller
 {
-    /*public function about() {
+	public function home()
+	{
 
-    	$name='Najihah';
+		return view('student.homeStudent');
+	}
 
-    	return view('try.about')->with('name',$name);
+	public function mrecord()
+	{
 
-    	/*<h1>About Me : <?= $name ?></h1>
-    }*/
+		return view('admin.studentRecord');
+	}
 
+	public function noti()
+	{
+		return view('student.noti');
+	}
 
 }

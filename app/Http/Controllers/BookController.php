@@ -9,14 +9,14 @@ use App\Http\Controllers\Controller;
 
 class BookController extends Controller
 {
-    /*public function about() {
+	public function rbook()
+	{
+		return view('librarian.recordBook');
+	}
 
-    	$name='Najihah';
-
-    	return view('try.about')->with('name',$name);
-
-    	/*<h1>About Me : <?= $name ?></h1>
-    }*/
-
+	public function lbook()
+	{
+		return view('student.latestBook');
+	}
 
 }

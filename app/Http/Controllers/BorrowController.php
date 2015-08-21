@@ -9,14 +9,15 @@ use App\Http\Controllers\Controller;
 
 class BorrowController extends Controller
 {
-    /*public function about() {
+    public function bbook() {
 
-    	$name='Najihah';
+    	return view('librarian.borrowBook');
+    }
 
-    	return view('try.about')->with('name',$name);
+    public function sendmsg() {
 
-    	/*<h1>About Me : <?= $name ?></h1>
-    }*/
+    	return view('librarian.sendMessage');
+    }
 
 
 }

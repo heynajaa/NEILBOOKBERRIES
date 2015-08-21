@@ -14,9 +14,42 @@
 //
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
-Route::get('auth/loginstudent', 'LoginController@loginStudent');
-Route::get('/', 'PagesController@index');
 
+//welcome ok
+Route::get('/', 'PagesController@index'); 
+
+// admin 
+Route::get('homeadmin', 'AdminController@home'); 
+Route::get('manageclass', 'ClassController@mclass'); 
+Route::get('managestudent' , 'ClassController@mstudent'); // {id} catch anything type 
+Route::get('studentrecord', 'StudentController@mrecord'); 
+
+// guest
+Route::get('homeguest', 'GuestController@home'); 
+Route::get('nilamstudentguest', 'GuestController@nstudentguest'); 
+
+// librarian
+Route::get('homelibrarian', 'LibrarianController@home'); 
+Route::get('recordbook' , 'BookController@rbook');
+Route::get('bookborrow' , 'BorrowController@bbook');
+Route::get('sendmessage' , 'BorrowController@sendmsg');
+
+// student 
+Route::get('homestudent', 'StudentController@home'); 
+Route::get('latestbook' , 'BookController@lbook');
+Route::get('recordnilam' , 'NilamController@rnilam');
+Route::get('noti' , 'StudentController@noti');
+Route::get('nilam' , 'NilamController@nilamlist');
+
+// teacher
+Route::get('hometeacher', 'TeacherController@home'); 
+Route::get('nilamclass', 'NilamController@nclass'); 
+Route::get('nilamstudent', 'NilamController@nstudent'); 
+Route::get('commentnilam', 'NilamController@comment'); 
+
+
+
+//Route::get('managestudent', 'AdminController@mstudent'); 
 
 /*//route to Admin Login page
 Route::get('loginAdmin', 'LoginController@loginAdmin');
